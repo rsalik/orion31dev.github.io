@@ -1,2 +1,0 @@
-(this["webpackJsonpryansalik.com"]=this["webpackJsonpryansalik.com"]||[]).push([[0],{11:function(n,c,t){"use strict";t.r(c);var e=t(0),r=t.n(e),s=t(3),a=t.n(s),i=(t(8),t(9),t(1));var o=function(){return Object(i.jsx)("div",{className:"App",children:"ryansalik.com"})};a.a.render(Object(i.jsx)(r.a.StrictMode,{children:Object(i.jsx)(o,{})}),document.getElementById("root"))},8:function(n,c,t){},9:function(n,c,t){}},[[11,1,2]]]);
-//# sourceMappingURL=main.edc49943.chunk.js.map
