@@ -1,3 +1,9 @@
+:root {
+  --bkg: #282c34;
+  --bkg-light: #3e4450;
+  --acc-gold: #ffd900;
+}
+
 .app {
   text-align: center;
   background-color: #282c34;
@@ -14,15 +20,182 @@
 .header {
   position: absolute;
   top: 0;
+
   width: 100%;
   padding: 3vmin;
-  font-size: 4vmin;
-  font-weight: bold;
 
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
-  justify-content: left;
-  
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.link {
+  display: block;
+  margin: 1.5vmin;
+}
+
+.link > div,
+.project-name {
+  position: relative;
+
+  margin: 0 auto;
+
+  text-align: right;
+
+  display: flex;
+  align-items: center;
+  border: solid white 0.3vmin;
+  border-radius: 2vmin;
+
+  justify-content: center;
+
+  transition: all 0.3s ease;
+}
+
+.project-info {
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid var(--bkg-light) 0.3vmin;
+  border-radius: 2vmin;
+
+  transition: all 0.3s ease;
+}
+
+.link.preferred {
+  margin-top: 4vmin;
+}
+
+.link.preferred div {
+  color: var(--acc-gold);
+  border-color: var(--acc-gold);
+}
+
+.section {
+  border: 0.3vmin solid var(--bkg-light);
+  padding: 3vmin 0;
+  width: 70vmin;
+  border-radius: 3vmin;
+
+  margin: 1vmin auto;
+
+  text-align: center;
+}
+
+.contact-email-preferred-label {
+  position: absolute;
+  left: 1vmin;
+
+  text-align: left;
+}
+
+.project-name {
+  margin: 1.25vmin auto;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-name.active {
+  background: white;
+  color: var(--bkg);
+}
+
+.project.active {
+  display: inline-block;
+  border: .3vmin solid white;
+  padding: .5vmin 1vmin;
+
+  margin: 1vmin auto;
+
+  border-radius: 3vmin;
+}
+
+@media (min-width: 600px) {
+  .header {
+    font-size: 4vmin;
+    justify-content: left;
+  }
+
+  .link > div,
+  .project-name,
+  .project-info {
+    width: 30vmin;
+    padding: 1vmin 2vmin;
+  }
+
+  .link.email > div {
+    justify-content: flex-end;
+  }
+
+  .link > div:hover,
+  .project-name:hover {
+    background: white;
+    color: var(--bkg);
+  }
+
+  .link.preferred > div:hover {
+    background: var(--acc-gold);
+  }
+
+  .link > div span,
+  .project-name {
+    font-size: 2.25vmin;
+  }
+
+  .project-info {
+    font-size: 2vmin;
+  }
+
+  .section-heading {
+    font-size: 3.25vmin;
+  }
+
+  .contact-email-preferred-label {
+    font-size: 2vmin;
+    top: -2.5vmin;
+  }
+}
+
+@media (max-width: 599px) {
+  .header {
+    font-size: 5vmin;
+    justify-content: center;
+  }
+
+  .link > div,
+  .project-name,
+  .project-info {
+    width: 50vmin;
+    padding: 1.5vmin 2vmin;
+  }
+
+  .link > div span,
+  .project-name {
+    font-size: 3.5vmin;
+  }
+
+  .project-info {
+    font-size: 3.2vmin;
+  }
+
+  .link > div span {
+    margin-left: 6vmin;
+  }
+
+  .section-heading {
+    font-size: 6.25vmin;
+  }
+
+  .contact-email-preferred-label {
+    font-size: 4vmin;
+    top: -4.5vmin;
+  }
 }
