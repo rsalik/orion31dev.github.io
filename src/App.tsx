@@ -8,10 +8,19 @@ function App() {
   return (
     <div className="app">
       <Header></Header>
+      <div className="content-bump"></div>
       <Projects></Projects>
       <Contact></Contact>
     </div>
   );
+}
+
+const IconStyle = {
+  fontSize: window.innerWidth > 600 ? '3vmin' : '5vmin',
+};
+
+export function mergeIconStyles(style: any) {
+  return Object.assign(style, IconStyle);
 }
 
 export default App;

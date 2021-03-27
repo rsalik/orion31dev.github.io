@@ -1,6 +1,10 @@
 import React, { MouseEventHandler } from 'react';
-import CodeIcon from '@material-ui/icons/Code';
 import LinkIcon from '@material-ui/icons/Link';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+import { mergeIconStyles } from '../App';
 
 interface ProjectsState {
   selected: string;
@@ -12,7 +16,7 @@ export default class Projects extends React.Component<any, ProjectsState> {
       name: 'Geoguessr',
       desc: 'A remake of a game where you guess the location based on a Google StreetView',
       repo: 'https://github.com/Orion31Dev/Geoguessr',
-      link: 'https://geoguessr.herokuapp.com'
+      link: 'https://geoguessr.herokuapp.com',
     },
     {
       name: 'BombParty',
@@ -82,18 +86,18 @@ function Project(props: { name: string; desc: string; repo: string; link: string
       </div>
       {props.selected && <div className="project-info">{props.desc}</div>}
       {props.selected && (
-        <a href={props.repo} className="link">
+        <a href={props.link} className="link preferred">
           <div>
-            <CodeIcon style={{ position: 'absolute', left: '2vmin' }} />
-            Repository
+            <LinkIcon fontSize={'large'} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
+            Visit
           </div>
         </a>
       )}
       {props.selected && (
-        <a href={props.link} className="link">
+        <a href={props.repo} className="link">
           <div>
-            <LinkIcon style={{ position: 'absolute', left: '2vmin' }} />
-            Visit
+            <FontAwesomeIcon icon={faGithub} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
+            Repository
           </div>
         </a>
       )}

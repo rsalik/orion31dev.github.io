@@ -35,7 +35,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body, html, #root {
-  width: 100%;
+html, body, #root {
   height: 100%;
+  width: 100%;
+}
+
+#root {
+  overflow-y: auto;
 }

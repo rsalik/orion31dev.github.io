@@ -1,7 +1,26 @@
 :root {
   --bkg: #282c34;
   --bkg-light: #3e4450;
+  --bkg-lighter: #4e5564;
   --acc-gold: #ffd900;
+}
+
+::-webkit-scrollbar {
+  width: 1vmin;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bkg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bkg-lighter);
+
+  border-radius: 5vmin;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bkg-light);
 }
 
 .app {
@@ -14,11 +33,12 @@
   justify-content: center;
 
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+
+  position: relative;
 }
 
 .header {
-  position: absolute;
   top: 0;
 
   width: 100%;
@@ -28,6 +48,10 @@
 
   display: flex;
   align-items: center;
+}
+
+.content-bump {
+  height: 10vmin;
 }
 
 a {
@@ -110,8 +134,8 @@ a {
 
 .project.active {
   display: inline-block;
-  border: .3vmin solid white;
-  padding: .5vmin 1vmin;
+  border: 0.3vmin solid white;
+  padding: 0.5vmin 1vmin;
 
   margin: 1vmin auto;
 
@@ -120,6 +144,7 @@ a {
 
 @media (min-width: 600px) {
   .header {
+    position: fixed;
     font-size: 4vmin;
     justify-content: left;
   }
@@ -166,6 +191,7 @@ a {
 
 @media (max-width: 599px) {
   .header {
+    position: absolute;
     font-size: 5vmin;
     justify-content: center;
   }
