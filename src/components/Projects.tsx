@@ -85,7 +85,7 @@ function Project(props: { name: string; desc: string; repo: string; link: string
         <a href={props.repo} className="link">
           <div>
             <CodeIcon style={{ position: 'absolute', left: '2vmin' }} />
-            Repository
+            <span>Repository</span>
           </div>
         </a>
       )}
@@ -93,7 +93,7 @@ function Project(props: { name: string; desc: string; repo: string; link: string
         <a href={props.link} className="link">
           <div>
             <LinkIcon style={{ position: 'absolute', left: '2vmin' }} />
-            Visit
+            <span>Visit</span>
           </div>
         </a>
       )}
