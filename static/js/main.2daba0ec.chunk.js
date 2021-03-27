@@ -1,2 +1,0 @@
-(this["webpackJsonpryansalik.com"]=this["webpackJsonpryansalik.com"]||[]).push([[0],{10:function(n,e,c){},11:function(n,e,c){"use strict";c.r(e);var t=c(1),r=c.n(t),s=c(3),a=c.n(s),i=(c(8),c(0));function o(){return Object(i.jsx)("div",{className:"header",children:"ryansalik.com"})}c(10);var d=function(){return Object(i.jsx)("div",{className:"app",children:Object(i.jsx)(o,{})})};a.a.render(Object(i.jsx)(r.a.StrictMode,{children:Object(i.jsx)(d,{})}),document.getElementById("root"))},8:function(n,e,c){}},[[11,1,2]]]);
-//# sourceMappingURL=main.2daba0ec.chunk.js.map
