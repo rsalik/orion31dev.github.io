@@ -89,7 +89,7 @@ function Project(props: { name: string; desc: string; repo: string; link: string
         <a href={props.link} className="link preferred">
           <div>
             <LinkIcon fontSize={'large'} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
-            Visit
+            <span>Visit</span>
           </div>
         </a>
       )}
@@ -97,7 +97,7 @@ function Project(props: { name: string; desc: string; repo: string; link: string
         <a href={props.repo} className="link">
           <div>
             <FontAwesomeIcon icon={faGithub} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
-            Repository
+            <span>Repository</span>
           </div>
         </a>
       )}
