@@ -9,7 +9,7 @@ import { mergeIconStyles } from '../App';
 export default function Contact() {
   return (
     <div className="contact section">
-      <div className="section-heading">Contact Me</div>
+      <div className="section-heading" style={{ marginBottom: '4vmin'}}>Contact Me</div>
       <Email email={'rssalik14@gmail.com'} preferred />
       <Email email={'orion31dev@gmail.com'} preferred={false} />
       <Github />
