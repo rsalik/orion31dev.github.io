@@ -98,7 +98,7 @@ a {
   margin-top: 4vmin;
 }
 
-.link.preferred div {
+.link.highlight div {
   color: var(--acc-gold);
   border-color: var(--acc-gold);
 }
