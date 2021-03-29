@@ -94,11 +94,11 @@ a {
   transition: all 0.3s ease;
 }
 
-.link.preferred {
+.link.highlight {
   margin-top: 4vmin;
 }
 
-.link.preferred div {
+.link.highlight div {
   color: var(--acc-gold);
   border-color: var(--acc-gold);
 }
@@ -112,13 +112,6 @@ a {
   margin: 1vmin auto;
 
   text-align: center;
-}
-
-.contact-email-preferred-label {
-  position: absolute;
-  left: 1vmin;
-
-  text-align: left;
 }
 
 .project-name {
@@ -156,8 +149,8 @@ a {
     padding: 1vmin 2vmin;
   }
 
-  .link.email > div {
-    justify-content: flex-end;
+  .link.email > div > span {
+    margin-left: 2vmin;
   }
 
   .link > div:hover,
@@ -166,7 +159,7 @@ a {
     color: var(--bkg);
   }
 
-  .link.preferred > div:hover {
+  .link.highlight > div:hover {
     background: var(--acc-gold);
   }
 
@@ -181,11 +174,6 @@ a {
 
   .section-heading {
     font-size: 3.25vmin;
-  }
-
-  .contact-email-preferred-label {
-    font-size: 2vmin;
-    top: -2.5vmin;
   }
 }
 
@@ -212,16 +200,7 @@ a {
     font-size: 3.2vmin;
   }
 
-  .link > div span {
-    margin-left: 6vmin;
-  }
-
   .section-heading {
     font-size: 6.25vmin;
-  }
-
-  .contact-email-preferred-label {
-    font-size: 4vmin;
-    top: -4.5vmin;
   }
 }

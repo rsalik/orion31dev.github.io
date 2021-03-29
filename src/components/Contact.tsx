@@ -8,20 +8,18 @@ import { mergeIconStyles } from '../App';
 
 export default function Contact() {
   return (
-    <div className="contact section">
+    <div className="contact section"> 
       <div className="section-heading">Contact Me</div>
-      <Email email={'rssalik14@gmail.com'} preferred />
-      <Email email={'orion31dev@gmail.com'} preferred={false} />
+      <Email email={'rssalik14@gmail.com'} />
       <Github />
     </div>
   );
 }
 
-function Email(props: { email: string; preferred: boolean }) {
+function Email(props: { email: string }) {
   return (
-    <a href={`mailto:${props.email}`} className={'link email' + (props.preferred ? ' preferred' : '')}>
+    <a href={`mailto:${props.email}`} className={'link email'}>
       <div>
-        {props.preferred && <div className="contact-email-preferred-label">Preferred</div>}
         <EmailIcon style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
         <span>{props.email}</span>
       </div>
