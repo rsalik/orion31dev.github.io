@@ -94,10 +94,6 @@ a {
   transition: all 0.3s ease;
 }
 
-.link.highlight {
-  margin-top: 4vmin;
-}
-
 .link.highlight div {
   color: var(--acc-gold);
   border-color: var(--acc-gold);
