@@ -9,8 +9,10 @@ function App() {
     <div className="app">
       <Header></Header>
       <div className="content-bump"></div>
-      <Projects></Projects>
-      <Contact></Contact>
+      <main>
+        <Projects></Projects>
+        <Contact></Contact>
+      </main>
     </div>
   );
 }
