@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Header() {
-  return <div className="header">ryansalik.com</div>;
+  return <header className="header">ryansalik.com</header>;
 }
