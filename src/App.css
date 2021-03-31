@@ -145,10 +145,6 @@ a {
     padding: 1vmin 2vmin;
   }
 
-  .link.email > div > span {
-    margin-left: 2vmin;
-  }
-
   .link > div:hover,
   .project-name:hover {
     background: white;

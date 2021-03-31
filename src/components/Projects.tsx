@@ -1,10 +1,8 @@
 import React, { MouseEventHandler } from 'react';
+import Link from './Link';
+
 import LinkIcon from '@material-ui/icons/Link';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
-import { mergeIconStyles } from '../App';
 
 interface ProjectsState {
   selected: string;
@@ -85,22 +83,8 @@ function Project(props: { name: string; desc: string; repo: string; link: string
         <span>{props.name}</span>
       </div>
       {props.selected && <div className="project-info">{props.desc}</div>}
-      {props.selected && (
-        <a href={props.link} className="link highlight">
-          <div>
-            <LinkIcon fontSize={'large'} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
-            <span>Visit</span>
-          </div>
-        </a>
-      )}
-      {props.selected && (
-        <a href={props.repo} className="link">
-          <div>
-            <FontAwesomeIcon icon={faGithub} style={mergeIconStyles({ position: 'absolute', left: '2vmin' })} />
-            <span>Repository</span>
-          </div>
-        </a>
-      )}
+      {props.selected && <Link text={'Visit'} href={props.link} iconType={LinkIcon} highlight />}
+      {props.selected && <Link text={'Repository'} href={props.repo} iconType={faGithub} />}
     </div>
   );
 }
