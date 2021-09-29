@@ -11,6 +11,12 @@ interface ProjectsState {
 export default class Projects extends React.Component<any, ProjectsState> {
   projects = [
     {
+      name: 'Planet Patrol',
+      desc: 'A web interface to streamline the process of accessing and creating dispositions on potential exoplanets.',
+      repo: 'https://github.com/Orion31Dev/Planet-Patrol-Vetting-Website',
+      link: 'https://vet.planet-patrol.com',
+    },
+    {
       name: 'Geoguessr',
       desc: 'A remake of a game where you guess the location based on a Google StreetView',
       repo: 'https://github.com/Orion31Dev/Geoguessr',
@@ -48,6 +54,7 @@ export default class Projects extends React.Component<any, ProjectsState> {
       <div className="projects section">
         <div className="section-heading">Projects</div>
         {this.renderProjects()}
+        <div className="heroku">Some websites may take some time to load; this is a limitation of Heroku's free tier.</div>
       </div>
     );
   }

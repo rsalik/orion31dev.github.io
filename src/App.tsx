@@ -1,19 +1,15 @@
 import React from 'react';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './routes/Home';
 import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Header></Header>
-      <div className="content-bump"></div>
-      <main>
-        <Projects></Projects>
-        <Contact></Contact>
-      </main>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" component={Home} />
+      </Switch>
+    </Router>
   );
 }
 
