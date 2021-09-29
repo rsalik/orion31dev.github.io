@@ -1,0 +1,11 @@
+{
+  "short_name": "ryansalik.com",
+  "name": "ryansalik.com",
+  "description": "High schooler and avid programmer",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
